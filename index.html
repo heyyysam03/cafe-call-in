@@ -9,7 +9,7 @@
 </style></head><body><main>
 <header><div class="logo" aria-hidden="true">☕</div><div><h1>Cafe callin</h1><div class="sub">Simple order calling system</div></div></header>
 <section class="panel"><div class="switch-row"><div><div class="switch-title">Ding-Dong bell</div><div class="switch-desc">Play before the spoken announcement</div></div><label class="switch" aria-label="Enable or disable bell sound"><input id="bellToggle" type="checkbox" checked><span class="track"></span></label></div></section>
-<section class="panel number-card" aria-live="polite"><div class="eyebrow">Next order</div><div class="number" id="nextNumber">1</div><div class="hint">Ready to call</div></section>
+<section class="panel number-card" aria-live="polite"><div class="eyebrow">Next order</div><div class="number-controls">   <button type="button" id="minusBtn">−</button>   <input type="number" id="nextNumber" value="1" min="1" step="1">   <button type="button" id="plusBtn">+</button> </div><div class="hint">Ready to call</div></section>
 <button class="primary" id="callBtn">CALL ORDER 1</button>
 <div class="last"><div><small>Last called order</small><strong id="lastOrder">—</strong></div><div style="font-size:24px" aria-hidden="true">🔔</div></div>
 <div class="actions"><button class="secondary" id="repeatBtn" disabled>Repeat last order</button><button class="outline" id="resetBtn">Reset to 1</button></div>
